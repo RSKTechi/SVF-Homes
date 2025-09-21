@@ -43,6 +43,49 @@
       background: #163870;
     }
 
+     /* Floating Buttons */
+    .float-btn {
+      position: fixed;
+      left: 10px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .phone-btn {
+      top: 120px;
+      background: #0d6efd;
+    }
+
+    .whatsapp-btn {
+      top: 180px;
+      background: #25D366;
+    }
+
+    /* Enquiry Now Tab */
+    .enquiry-tab {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: red;
+      color: white;
+      padding: 10px 8px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: bold;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
     .pricing-section {
       text-align: center;
       padding: 60px 20px;
@@ -446,6 +489,75 @@
     text-align: center;
   }
 }
+
+  @media (max-width: 768px) {
+      .float-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        left: 8px;
+      }
+
+      .phone-btn {
+        top: 100px;
+      }
+
+      .whatsapp-btn {
+        top: 155px;
+      }
+
+      .enquiry-tab {
+        font-size: 14px;
+        padding: 8px 6px;
+      }
+    }
+
+    /* Large Phones (576px and below) */
+    @media (max-width: 576px) {
+      .float-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        left: 6px;
+      }
+
+      .phone-btn {
+        top: 90px;
+      }
+
+      .whatsapp-btn {
+        top: 145px;
+      }
+
+      .enquiry-tab {
+        font-size: 13px;
+        padding: 6px 5px;
+      }
+    }
+
+    /* Small Phones (400px and below) */
+    @media (max-width: 400px) {
+      .float-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        left: 5px;
+      }
+
+      .phone-btn {
+        top: 80px;
+      }
+
+      .whatsapp-btn {
+        top: 130px;
+      }
+
+      .enquiry-tab {
+        font-size: 12px;
+        padding: 5px 4px;
+      }
+    }
+
  @media (max-width: 768px) {
       footer {
         padding: 30px 15px;
@@ -480,7 +592,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./About.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="./work.html">Work</a></li>
